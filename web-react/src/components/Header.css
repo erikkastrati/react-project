@@ -1,0 +1,53 @@
+/* Add these styles to your CSS or use a styling solution like Styled Components */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-items a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your design */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .navbar-items.open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
