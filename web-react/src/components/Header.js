@@ -1,13 +1,26 @@
 // Header.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Modal from "react-modal";
+import Signup from '../pages/Signup';
 import "./Header.css";
+
+Modal.setAppElement("#root"); // Set the root element for accessibility
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSignupModalOpen, setSignupModalOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const openSignupModal = () => {
+    setSignupModalOpen(true);
+  };
+
+  const closeSignupModal = () => {
+    setSignupModalOpen(false);
   };
 
   return (
@@ -27,13 +40,21 @@ const Header = () => {
         <Link to="/about" activeClassName="active">
           About
         </Link>
-        <Link to="/login" activeClassName="active">
-          Login
-        </Link>
+        <div onClick={openSignupModal} className="navbar-item">
+          Signup
+        </div>
       </div>
       <div className="hamburger-menu" onClick={toggleMobileMenu}>
         ☰
       </div>
+      <Modal
+        isOpen={isSignupModalOpen}
+        onRequestClose={closeSignupModal}
+        contentLabel="Signup Modal"
+      >
+        <Signup />
+       
+      </Modal>
     </div>
   );
 };
