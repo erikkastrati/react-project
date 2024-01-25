@@ -1,0 +1,102 @@
+.footer-container {
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  gap: 30px;
+  padding: 20px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.footer-section h4 {
+  color: #64ccc5;
+}
+.footer-section li {
+  text-align: center;
+}
+.footer-section li:hover {
+  color: #64ccc5;
+}
+.logo img {
+  max-width: 100px;
+}
+.short-paragraph {
+  margin-top: 10px;
+}
+
+.footer-section h4 {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-section p {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.subscription-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-section input {
+  flex: 2;
+  padding: 8px;
+}
+
+.footer-section button {
+  font-family: Montserrat, sans-serif;
+  flex: 1;
+  padding: 8px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-section button:hover {
+  background-color: #2980b9;
+}
+.footer .copyright-section {
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+  background-color: #333;
+  padding: 20px 0px;
+  position: relative;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,52 @@
+.enoughtalk {
+  margin: 50px 0px;
+}
+.enoughtalk_container {
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../../assets/image/Call\ to\ Action\ 3.png), no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+  padding: 20px 15px;
+}
+.enoughtalk_container h3 {
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.enoughtalk_container button {
+  font-family: Montserrat, sans-serif;
+  margin: 10px 14px;
+  display: flex;
+  height: 47px;
+  padding: 8px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 23px;
+  background: var(--White-color, #2b2626);
+  cursor: pointer;
+  color: #64ccc5;
+}
+.enoughtalk_container button:hover {
+  background-color: #64ccc5;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .enoughtalk_container {
+    width: 90%;
+  }
+  .enoughtalk_container h3 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

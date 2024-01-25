@@ -1,0 +1,55 @@
+.process-container {
+  margin: 40px 0px 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.process-container h2 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card-process {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.process-container h1 {
+  text-align: center;
+  padding: 10px 0px;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card-process h3 {
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-process p {
+  padding: 4px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.card-process {
+  display: flex;
+}
+.img-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+}

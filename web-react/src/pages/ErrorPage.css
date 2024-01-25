@@ -1,0 +1,15 @@
+.error-container {
+  font-family: Ubuntu, sans-serif;
+  padding: 40px 0px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-container h2 {
+  color: #ff4500; /* Dark Orange */
+}
+
+.error-container p {
+  color: #555;
+  margin-top: 10px;
+}

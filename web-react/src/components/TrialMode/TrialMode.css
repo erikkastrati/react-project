@@ -1,0 +1,108 @@
+.trial-mode-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Black, #0a0a0af3);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-column,
+.right-column {
+  flex: 0 0 calc(50% - 10px);
+  box-sizing: border-box;
+}
+.left-column {
+  position: relative;
+}
+
+.left-column::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 40%;
+  height: 100%;
+  background: url("../../assets/image/Rectangle 26.png") center center / cover;
+  opacity: 0.1;
+}
+.left-column img {
+  display: flex;
+  width: 60%;
+  height: auto;
+  display: block;
+  margin-left: 40%;
+}
+
+.right-column {
+  padding: 20px;
+}
+.right-column h2 {
+  padding-bottom: 25px;
+  text-align: left;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.right-column h1 {
+  padding: 25px 0px;
+  color: #fbfbfb;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.right-column p {
+  color: var(--Light-Grey, #f4f4f4);
+  width: 60%;
+  padding: 25px 0px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+@media (max-width: 768px) {
+  .left-column,
+  .right-column {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-column img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+  .left-column::before {
+    display: none;
+  }
+  .trial-mode-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .right-column h2 {
+    text-align: left;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .right-column h1 {
+    color: #fbfbfb;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .right-column p {
+    width: 100%;
+    text-align: center;
+  }
+}

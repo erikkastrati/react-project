@@ -1,0 +1,8 @@
+/* Add this to your existing Header.css or create a new CSS file for Avatar styles */
+
+.avatar img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px;
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 8px; /* Add some spacing to the right of the avatar */
+}

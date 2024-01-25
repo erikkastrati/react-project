@@ -1,0 +1,107 @@
+.our-mission {
+  font-family: Montserrat, sans-serif;
+  padding: 40px 0px 190px 0px;
+  background: #0c0c0c;
+  height: auto;
+}
+.ourmission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.first-mission,
+.second-mission,
+.third-mission {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.our-mission .first-mission p,
+h2 {
+  color: #fff;
+}
+.first-mission p {
+  padding: 10px 40px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.second-mission span {
+  color: #fff;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.second-mission img {
+  max-width: 100%;
+}
+.second-mission .conversation {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.projects_conversation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.conversation p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.projects {
+  border-left: 2px solid #fff;
+  padding-left: 20px;
+}
+.projects span {
+  display: flex;
+  justify-content: center;
+}
+.projects p {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  text-align: center;
+}
+.third-mission {
+  margin-top: 20%;
+}
+.third-mission img {
+  max-width: 70%;
+}
+@media only screen and (max-width: 768px) {
+  .ourmission-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .first-mission,
+  .second-mission,
+  .third-mission {
+    width: 100%;
+  }
+  .first-mission p {
+    padding: 10px;
+  }
+}

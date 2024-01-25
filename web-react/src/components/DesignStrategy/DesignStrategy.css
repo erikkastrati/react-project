@@ -1,0 +1,83 @@
+.strategy-container {
+  margin: 40px 0px 60px 0px;
+}
+.strategy-container h2 {
+  padding: 40px 0px 20px 0px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.img-dsgstrategy {
+  width: 100%;
+  height: 50vh;
+  background: url(../../assets/image/Rectangle\ 2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-container-mobile {
+  display: none;
+}
+
+.box-strategies {
+  display: flex;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 15px 20px;
+  background-color: #0c0c0c;
+}
+.box-strategies p {
+  text-align: center;
+}
+
+.box-container {
+  margin-top: -49px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.box-strategies h5 {
+  font-family: Montserrat, sans-serif;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.box-strategies p {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    display: none;
+  }
+
+  .box-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .box-strategies {
+    border: 0;
+    padding: 30px 0px;
+    background-color: transparent;
+    display: flex;
+  }
+}

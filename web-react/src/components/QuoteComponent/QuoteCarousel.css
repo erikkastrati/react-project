@@ -1,0 +1,64 @@
+#quote-container {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.quote-div {
+  width: 70%;
+  background-color: #ffe6e6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  gap: 35px;
+  padding: 50px 0px;
+  margin: 0px auto;
+}
+/* .quote-name #quote-image img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+} */
+#quote-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#quote-text h2 {
+  padding: 15px 0px;
+  color: #0c0c0c;
+}
+#quote-text p {
+  color: var(--Black, #0c0c0c);
+  text-align: center;
+  font-family: Ubuntu, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#quote-text .quote-role {
+  font-size: 12px;
+}
+#quote-text .quote-name {
+  font-size: 19px;
+  font-weight: 300;
+  text-align: center;
+}
+#quote-container button {
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #64ccc5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.6s ease;
+}
+#quote-container button:hover {
+  background-color: #adafb1;
+}

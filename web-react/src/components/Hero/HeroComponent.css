@@ -1,0 +1,148 @@
+.hero {
+  background: rgba(0, 0, 0, 0.904);
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.left-section {
+  width: 50%;
+  margin-bottom: 50px;
+}
+.left-section h2 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.left-section p {
+  width: 92%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.54px;
+}
+.hero .hero-content p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ccc;
+}
+.disover-banner-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands-icon {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+.brand-trusted {
+  display: flex;
+  justify-content: center;
+}
+.brand-trusted span {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.icon-container {
+  margin-left: 20px;
+}
+.right-section img {
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+
+  border: 1px solid rgb(160, 160, 170);
+  padding: 10px;
+}
+
+.left-section h2,
+.left-section p {
+  color: #fff;
+  text-align: center;
+  padding: 4px;
+}
+.brand-trusted span {
+  margin: 20px 0px;
+}
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-container img {
+  width: 30px;
+  height: 30px;
+}
+.icon-container-right {
+  display: none;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+  .left-section h2 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .hero .hero-content p {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ccc;
+  }
+  .left-section,
+  .right-section {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .brands-icon {
+    padding: 0;
+  }
+  .brand-trusted {
+    display: none;
+  }
+  .icon-container {
+    display: none;
+  }
+  .right-section {
+    display: flex;
+    justify-content: center;
+  }
+  .right-section img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-container-right {
+    display: block;
+  }
+}

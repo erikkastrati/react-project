@@ -1,13 +1,17 @@
-/* Add these styles to your CSS or use a styling solution like Styled Components */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background-color: #292a2ce5;
   color: white;
 }
-
+.navbar-logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 .navbar-logo a {
   color: white;
   text-decoration: none;
@@ -17,37 +21,55 @@
 .navbar-items {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar-items a {
   color: white;
   text-decoration: none;
 }
-
+.navbar-items .avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hamburger-menu {
   display: none;
   cursor: pointer;
   font-size: 1.5rem;
 }
-
+.custom-modal {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
 /* Mobile styles */
 @media (max-width: 768px) {
   .navbar-items {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust based on your design */
+    top: 80px; 
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #292a2ce5;
   }
 
   .navbar-items.open {
     display: flex;
+    z-index: 1;
   }
 
   .hamburger-menu {
     display: block;
+  }
+
+  .modal-content {
+    width: 80%; 
+    height: 80%; 
+    margin: auto;
   }
 }
